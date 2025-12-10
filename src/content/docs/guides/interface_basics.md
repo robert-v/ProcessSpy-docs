@@ -23,7 +23,7 @@ Clicking this button enters the "select mode". In this mode, left-click anywhere
 Copies the currently visible processes as JSON to clipboard.
 
 ## Quick-search filter
-Allows to select one or more properties used in quick-search.
+Allows to select one or more properties used in quick-search. The number of currently selected properties is shown on the button.
 
 ## Quick-search
 Istantly searches for processes matching the given string (or regex) in the selected properties.

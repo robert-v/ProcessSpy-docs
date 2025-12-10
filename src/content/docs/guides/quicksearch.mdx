@@ -1,0 +1,57 @@
+---
+title: Quicksearch
+---
+
+Quicksearch allows you to filter processes using simple text or regular expressions. The search is performed on the properties selected in the Quick-search filter and within the context of current user filter and selected view type.
+It is useful to quickly filter processes further without having to create or modify user filters.
+
+For example, if view type is set to `Hierarchy, expand children dimmed` or `Hierarchy, expand children fully` quicksearch will match also processes that are children of processes matching the search query (recursively).
+
+### Text Search
+By default, quicksearch performs a simple text search. The search is case sensitive or case insensitive depending on the settings and matches any process containing the given string in any of the selected properties.
+
+### Regex Search
+To use regex expressions, these need to be enclosed in forward slashes. The search is case sensitive or case insensitive depending on the settings.
+
+#### Examples:
+
+Match properties starting with "Fi":
+```
+/^Fi/
+```
+
+Match properties ending with "er":
+```
+/er$/
+```
+
+Match properties containing "java" or "python":
+```
+/java|python/
+```
+
+Match properties containing years from 2020 to 2025 (useful for Version):
+```
+/202[0-5]/
+```
+
+Match specific version numbers with three elements (useful for Version):
+```
+/\d+\.\d+(\.\d+)?/
+```
+
+Match home directory paths (useful for Command):
+```
+/\/Users\/[^\/]+\//
+```
+
+Match properties with dots:
+
+```
+/\./
+```
+
+Match anything NOT starting with "com.apple"
+```
+/^(?!com\.apple)/
+```

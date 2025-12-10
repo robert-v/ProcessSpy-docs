@@ -12,6 +12,7 @@ export default defineConfig({
           logo: {
               src: './src/assets/logo.png',
           },
+          favicon: '/favicon.ico',
           social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/robert-v/ProcessSpy-public' }],
           sidebar: [
               {
@@ -22,6 +23,7 @@ export default defineConfig({
                       { label: 'Interface Basics', slug: 'guides/interface_basics' },
                       { label: 'Table Columns', slug: 'guides/table_columns' },
                       { label: 'Bottom Pane', slug: 'guides/bottom_pane' },
+                      { label: 'Quicksearch', slug: 'guides/quicksearch' },
                       { label: 'History Recording', slug: 'guides/history_recording' },
                   ],
               },
