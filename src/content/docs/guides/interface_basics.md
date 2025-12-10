@@ -4,7 +4,7 @@ description: Description of main elements of user interaface.
 ---
 
 ## Subtitle
-Shows number of processes and filter name. When View Type is set to Hierarchy, expand children full, it also shows number of processes shown but not matching the filter.
+Shows number of processes and filter name. When View Type is set to `Hierarchy, expand children fully`, it also shows number of processes shown but not matching the filter.
 
 ## View Type
 Allows to select between four different view types:
@@ -30,3 +30,12 @@ Istantly searches for processes matching the given string (or regex) in the sele
 
 ## User filters
 Allows to select user filter. All processes matching the user filter are displayed in the main table.
+
+## Bottom pane
+When a process is selected in the main table, the bottom pane shows detailed information about the selected process. The bottom pane can be minimized or expanded using the button on the right side of the toolbar.
+
+### Minimized state
+Shows basic information about the selected process including PID, name, start time, Bundle ID (license only), signing organization (license only) and format (license only).
+
+### Expanded state
+Shows detailed information about the selected process. See [Bottom Pane](/guides/bottom_pane/) for more information.

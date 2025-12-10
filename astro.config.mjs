@@ -21,6 +21,8 @@ export default defineConfig({
                       { label: 'Introduction', slug: 'guides/introduction' },
                       { label: 'Interface Basics', slug: 'guides/interface_basics' },
                       { label: 'Table Columns', slug: 'guides/table_columns' },
+                      { label: 'Bottom Pane', slug: 'guides/bottom_pane' },
+                      { label: 'History Recording', slug: 'guides/history_recording' },
                   ],
               },
               {
