@@ -42,5 +42,8 @@ Shows the number of threads used by the process.
 Shows the priority and nice value of the process.
 
 ## Aggregate values
-When viewing processes in Hierarchy view and depending on the settings, aggregate values can be shown for `CPU %`, `Resident Memory` and `Threads` columns. These aggregate values always represent the sum of the respective metrics for a process and all its child processes regardless of the selected view type or filter. 
+When viewing processes in Hierarchy view and depending on the settings, aggregate values can be shown for `CPU %`, `Resident Memory` and `Threads` columns. These aggregate values always represent the sum of the respective metrics for a process and all its child processes regardless of the selected view type or filter.
+
+## Permissions
+If the current user does not have sufficient permissions to access certain process information, some columns may display zero values or be empty. To view all process information, consider running the application with elevated privileges.
 

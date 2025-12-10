@@ -10,7 +10,7 @@ User filters can be defined using JavaScript. This allows to create complex filt
 For each filter a context is passed containing the following objects and properties:
 
 - `process`: The process object to be tested against the filter.
-- _username_: The username of the current user.
+- `_username`: The username of the current user.
 
 ## Process object
 The process object contains the following properties:
@@ -32,4 +32,32 @@ The process object contains the following properties:
 | `isApplication`       | Whether the process is windowed (activationPolicy = .regular)                     | Boolean | No               |
 | `bundleIdentifier`    | Bundle ID (e.g. com.itone.ProcessSpy)                                             | String  | Yes               |
 | `signingOrganization` | Extracted from process signature `Subject` `O` element                            | String  | Yes               |
-| `startupEntryType`    | One of the following: `launchDaemon`, `launchAgent`, `loginItemBookmark` or empty | String | Yes              | 
+| `startupEntryType`    | One of the following: `launchDaemon`, `launchAgent`, `loginItemBookmark` or empty | String | Yes              |
+
+## Example filters
+
+Show processes using more than 300 MB of resident memory:
+```js
+process.residentMemory > 314572800
+```
+
+Show processes from Microsoft:
+```js
+process.bundleIdentifier.includes('com.microsoft')
+```
+
+Show unsigned processes:
+```js
+!process.signingOrganization ||
+process.signingOrganization.length === 0
+```
+
+Show processes started less than 60 seconds ago:
+```js
+new Date() - new Date(process.startTime) < 60 * 1000
+```
+
+Show processes with a startup entry:
+```js
+process.startupEntryType && process.startupEntryType.length > 0
+```

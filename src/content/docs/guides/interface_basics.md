@@ -19,6 +19,8 @@ When enabled, finished processes matching selected user filter are shown in the 
 ## Click to select a process
 Clicking this button enters the "select mode". In this mode, left-click anywhere on the screen will select the corresponding process in the main table
 
+**Accessibility permissions are required to use this feature.**
+
 ## Export JSON
 Copies the currently visible processes as JSON to clipboard.
 

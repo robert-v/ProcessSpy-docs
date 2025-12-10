@@ -24,7 +24,7 @@ export default defineConfig({
                       { label: 'Table Columns', slug: 'guides/table_columns' },
                       { label: 'Bottom Pane', slug: 'guides/bottom_pane' },
                       { label: 'Quicksearch', slug: 'guides/quicksearch' },
-                      { label: 'History Recording', slug: 'guides/history_recording' },
+                      { label: 'User Filters', slug: 'guides/user_filters' },
                   ],
               },
               {
