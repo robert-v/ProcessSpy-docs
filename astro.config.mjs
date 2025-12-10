@@ -40,4 +40,5 @@ export default defineConfig({
           enabled: true,
       }
   }),
+    site: 'https://docs.process-spy.app',
 });
