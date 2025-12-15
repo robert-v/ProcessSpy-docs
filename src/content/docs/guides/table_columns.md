@@ -14,6 +14,7 @@ This column along with process name contains the following information depending
 - **Recording indicator** - green dot shown when the process history is being recorded
 - **NEW badge** - shown when the process started less than 30 seconds ago
 - **Indentation guides** - shows one dot per level of hierarchy depth starting from the second level of depth
+- **Process paused indicator** - shows a pause icon when the process is paused
 - **CPU mini chart** - shows CPU usage history over the last 30 seconds, from 0 to 100 percent for better readability
 - **Secondary value** - shows one of the available secondary values depending on current settings
 
