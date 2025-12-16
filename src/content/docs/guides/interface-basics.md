@@ -40,4 +40,4 @@ When a process is selected in the main table, the bottom pane shows detailed inf
 Shows basic information about the selected process including PID, name, start time, Bundle ID (license only), signing organization (license only) and format (license only).
 
 ### Expanded state
-Shows detailed information about the selected process. See [Bottom Pane](/guides/bottom_pane/) for more information.
+Shows detailed information about the selected process. See [Bottom Pane](/guides/bottom-pane/) for more information.

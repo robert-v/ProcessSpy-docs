@@ -42,4 +42,4 @@ Shows entitlements of the process in `JSON` format.  Supports text search.
 Shows contents of the `Info.plist` file of the process in `KEY=VALUE` format. Supports text search.
 
 ## History
-When process history recording is enabled, shows historical values of CPU %, Resident Memory and Virtual Memory over time. See [History recording](/guides/history_recording/) for more information.
+When process history recording is enabled, shows historical values of CPU %, Resident Memory and Virtual Memory over time. See [History recording](/guides/history-recording/) for more information.

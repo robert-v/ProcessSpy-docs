@@ -18,7 +18,7 @@ To create a new user filter, follow these steps:
 1. Go to Settings > Filters.
 2. Click on the "Add..." button.
 3. Enter a name for the filter.
-4. Define the filter in JS editor (see [JavaScript filters](/reference/js_filters/) for more information).
+4. Define the filter in JS editor (see [JavaScript filters](/reference/js-filters/) for more information).
    Built-in expression checker notifies you of any syntax errors in the filter code.
 5. Click "Save" to create the filter.
 

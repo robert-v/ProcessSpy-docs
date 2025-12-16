@@ -47,6 +47,11 @@ Match specific version numbers with three elements (useful for Version):
 /\d+\.\d+(\.\d+)?/
 ```
 
+Match multiple version formats (x.x, x.x.x, x.x.x.x, x.x.x-x):
+```
+/v?(\d+\.\d+(?:\.\d+)*(?:[_\-][0-9a-zA-Z]+)?)/
+```
+
 Match home directory paths (useful for Command):
 ```
 /\/Users\/[^\/]+\//

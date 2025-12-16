@@ -20,11 +20,14 @@ export default defineConfig({
                   items: [
                       // Each item here is one entry in the navigation menu.
                       { label: 'Introduction', slug: 'guides/introduction' },
-                      { label: 'Interface Basics', slug: 'guides/interface_basics' },
-                      { label: 'Table Columns', slug: 'guides/table_columns' },
-                      { label: 'Bottom Pane', slug: 'guides/bottom_pane' },
+                      { label: 'Interface Basics', slug: 'guides/interface-basics' },
+                      { label: 'Table Columns', slug: 'guides/table-columns' },
+                      { label: 'Bottom Pane', slug: 'guides/bottom-pane' },
                       { label: 'Quicksearch', slug: 'guides/quicksearch' },
-                      { label: 'User Filters', slug: 'guides/user_filters' },
+                      { label: 'Context Menus', slug: 'guides/context-menus' },
+                      { label: 'Settings', slug: 'guides/settings' },
+                      { label: 'User Filters', slug: 'guides/user-filters' },
+                      { label: 'History Recording', slug: 'guides/history-recording' },
                   ],
               },
               {
