@@ -25,7 +25,7 @@ Shows the full command used to start the process. Command string is truncated in
 Shows CPU usage in percent. For multi-core systems, this value can exceed 100% with a maximum of `(number of cores * 100)%`.
 
 ### Version
-Shows the version of the process when available (`CFBundleShortVersionString` from `Info.plist`).
+Shows the version of the process when available (`CFBundleShortVersionString` from `Info.plist`). If not available, the tool attempts to extract the version from the executable's path.
 
 ### Resident Memory
 Shows the resident memory usage in bytes. This is the portion of memory occupied by a process that is held in RAM. Equals to `Real Memory` in Activity Monitor.
