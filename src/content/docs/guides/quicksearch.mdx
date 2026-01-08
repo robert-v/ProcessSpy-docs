@@ -41,6 +41,10 @@ Match properties containing years from 2020 to 2025 (useful for Version):
 ```
 /202[0-5]/
 ```
+Match properties NOT containing "arm64":
+```
+/^((?!arm64).)*$/
+```
 
 Match specific version numbers with three elements (useful for Version):
 ```
