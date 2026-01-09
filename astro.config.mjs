@@ -23,7 +23,7 @@ export default defineConfig({
                       { label: 'Interface Basics', slug: 'guides/interface-basics' },
                       { label: 'Table Columns', slug: 'guides/table-columns' },
                       { label: 'Bottom Pane', slug: 'guides/bottom-pane' },
-                      { label: 'Quicksearch', slug: 'guides/quicksearch' },
+                      { label: 'Quick Search', slug: 'guides/quick-search' },
                       { label: 'Context Menus', slug: 'guides/context-menus' },
                       { label: 'Settings', slug: 'guides/settings' },
                       { label: 'User Filters', slug: 'guides/user-filters' },

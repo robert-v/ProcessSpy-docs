@@ -5,7 +5,7 @@ title: JavaScript filters
 
 ## JavaScript filters
 
-User filters can be defined using JavaScript. This allows to create complex filters that are not possible using the quick-search syntax.
+User filters can be defined using JavaScript. This allows to create complex filters that are not possible using the quick search syntax.
 
 For each filter a context is passed containing the following objects and properties:
 
@@ -57,7 +57,7 @@ Show processes started less than 60 seconds ago:
 new Date() - new Date(process.startTime) < 60 * 1000
 ```
 
-Show processes with a startup entry:
+Show processes with a startup entry (daemon, agent or login item):
 ```js
 process.startupEntryType && process.startupEntryType.length > 0
 ```

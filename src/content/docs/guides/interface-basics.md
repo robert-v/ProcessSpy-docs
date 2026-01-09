@@ -4,7 +4,7 @@ description: Description of main elements of user interaface.
 ---
 
 ## Subtitle
-Shows number of processes and filter name. When View Type is set to `Hierarchy, expand children fully`, it also shows number of processes shown but not matching the filter.
+Shows number of processes and selected filter name. When View Type is set to `Hierarchy, expand children fully`, it also shows number of processes shown but not matching the filter.
 
 ## View Type
 Allows to select between four different view types:
@@ -24,11 +24,11 @@ Clicking this button enters the "select mode". In this mode, left-click anywhere
 ## Export JSON
 Copies the currently visible processes as JSON to clipboard.
 
-## Quick-search filter
-Allows to select one or more properties used in quick-search. The number of currently selected properties is shown on the button.
+## Quick search filter
+Allows to select one or more properties used in quick search. The number of currently selected properties is shown on the button.
 
-## Quick-search
-Istantly searches for processes matching the given string (or regex) in the selected properties.
+## Quick search
+Instantly searches for processes matching the given string (or regex) in the selected properties.
 
 ## User filters
 Allows to select user filter. All processes matching the user filter are displayed in the main table.
