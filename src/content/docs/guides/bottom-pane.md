@@ -1,5 +1,11 @@
 ---
 title: Bottom Pane
+description: Detailed information about the selected macOS process shown in the bottom pane of the main window.
+head:
+  - tag: meta
+    attrs:
+      name: keywords
+      content: view process info.plist, view process entitlements, view process environment variables, view process open files, view process open connections, view process dylibs
 ---
 Bottom pane shows detailed information about the selected process in the main table. It consists of multiple sections grouped by categories:
 

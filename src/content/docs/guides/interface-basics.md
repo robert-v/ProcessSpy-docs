@@ -1,6 +1,11 @@
 ---
 title: User interface basics
-description: Description of main elements of user interaface.
+description: Overview of main elements of ProcessSpy user interface.
+head:
+  - tag: meta
+    attrs:
+      name: keywords
+      content: processspy, filter macos processes, find macos process, reveal finished process
 ---
 
 ## Subtitle

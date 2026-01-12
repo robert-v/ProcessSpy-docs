@@ -1,5 +1,11 @@
 ---
 title: History Recording
+description: Guide on how to use the history recording feature in ProcessSpy to monitor CPU, memory, and thread count of processes over time.
+head:
+  - tag: meta
+    attrs:
+      name: keywords
+      content: macos process history recording, process cpu usage history, process memory usage history, process thread count history
 ---
 
 ## Overview
