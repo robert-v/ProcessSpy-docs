@@ -40,6 +40,7 @@ Bottom pane shows detailed information about the selected process in the main ta
 
 ### Hierarchy
 - Parent process (Name and PID)
+  - Parent is determined based on ```Parent PID``` or ```Responsible PID``` if Parent PID is not available.
 - Child processes (Name and PID)
 
 ## Command
