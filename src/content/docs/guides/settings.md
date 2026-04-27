@@ -17,6 +17,9 @@ title: Settings
   - Startup Entry (license only)
   - User
   - Version
+- **Table alternate row backgrounds**: When enabled, alternate rows in the main table have a different background color for better readability.
+- **Cell vertical padding**: Adjusts the vertical padding of cells in the main table.
+- **Cell font size**: Adjusts the font size of cells in the main table.
 
 ### Behavior
 - **Refresh interval (seconds)**: Sets the interval at which process information is refreshed in the main table.

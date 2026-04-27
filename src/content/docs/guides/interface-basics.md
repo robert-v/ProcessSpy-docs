@@ -38,11 +38,15 @@ Instantly searches for processes matching the given string (or regex) in the sel
 ## User filters
 Allows to select user filter. All processes matching the user filter are displayed in the main table.
 
-## Bottom pane
-When a process is selected in the main table, the bottom pane shows detailed information about the selected process. The bottom pane can be minimized or expanded using the button on the right side of the toolbar.
+## Inspector pane
+When a process is selected in the main table, the inspector pane shows detailed information about the selected process. The inspector pane can be minimized or expanded using the button on the right side of the toolbar.
 
 ### Minimized state
-Shows basic information about the selected process including PID, name, start time, Bundle ID (license only), signing organization (license only) and format (license only).
+Shows basic information about the selected process including PID, name, start time, Bundle ID (license only), signing organization (license only) and format (license only), desource usage and disk I/O activity.
 
 ### Expanded state
-Shows detailed information about the selected process. See [Bottom Pane](/guides/bottom-pane/) for more information.
+Shows detailed information about the selected process. See [Inspector Pane](/guides/inspector-pane/) for more information.
+
+## Status bar
+Shows overall CPU usage, CPU core usage, GPU usage, Total memory usage and Disk read/write activity. Historical graphs have 24 slots, each representing one tick depending on the refresh interval set in settings.
+On the right side of the status bar current system up time is shown along with how much time the system has been actually awake.
