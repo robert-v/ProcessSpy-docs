@@ -23,9 +23,13 @@ Bottom pane shows detailed information about the selected process in the main ta
 - Format (license only)
 - Startup Entry (license only)
 - Launched By - shows the process which launched the given process. Taken from Parent ASN field in the process information. This can be different from the parent process shown in the Hierarchy section as it represents the process that directly launched the given process. Evaluated for GUI applications.
-- Signature 
+### Security
+- Sandboxed - shows whether the process is running with App Sandbox enabled.
+- Hardened - shows whether the process is using Apple's Hardened Runtime security feature.
+- Signature
   - collapsed state: Signing Organization
   - expanded state: Detailed signature information about Issuer and Subject fields
+
 ### Resource Usage
 - CPU % - current CPU usage in percent. For multi-core systems, this value can exceed 100% with a maximum of `(number of cores * 100)%`.
 - CPU Time - total CPU time used by the process since it started in `hh:mm:ss` format
