@@ -54,7 +54,3 @@ The helper can be removed at any time from the same place in Settings. After rem
 ## In the Process List
 
 The helper appears in the process list as `com.itone.ProcessSpy.PrivilegedHelper`, running as root. It is idle almost all of the time and exits shortly after ProcessSpy no longer needs it.
-
-## Availability
-
-The privileged helper is available in the version of ProcessSpy distributed directly from this site. The Setapp version does not include it.
