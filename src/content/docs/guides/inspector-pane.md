@@ -17,6 +17,7 @@ Bottom pane shows detailed information about the selected process in the main ta
 - Start Time
 - Run Time
 - Last Seen (for finished processes, when the process was last observed before finishing)
+- Timeline - shows a graphical representation of the process's lifetime in relation to system uptime.
 ### Process Details
 - Bundle ID
 - Main Executable (license only)
@@ -32,9 +33,13 @@ Bottom pane shows detailed information about the selected process in the main ta
 
 ### Resource Usage
 - CPU % - current CPU usage in percent. For multi-core systems, this value can exceed 100% with a maximum of `(number of cores * 100)%`.
+- GPU % - current GPU usage in percent. Estimated. Apple Silicon only.
+- User/Sys - shows the amount of CPU time spent in user and system mode since the process started.
+- QoS - shows the current Quality of Service (QoS) based on thread priority. Possible values are `User Interactive`, `User Initiated`, `Utility`, `Background`, `Maiantenaance`, `Legacy` and `Default`.
 - CPU Time - total CPU time used by the process since it started in `hh:mm:ss` format
 - Memory - shows Resident Memory in bytes. Resident Memory is the portion of memory occupied by a process that is held in RAM. Equals to `Real Mem` in Activity Monitor.
 - Footprint - shows the memory footprint of the process in bytes. This is the amount of RAM currently used by the process, including compressed memory. Equals to `Memory` in Activity Monitor.
+- Page-ins - number of page-ins (pages and bytes) performed by the process since it started and on a per second basis
 - Threads
 ### Disk I/O Activity
 - Read - total bytes read by the process since it started
@@ -42,10 +47,12 @@ Bottom pane shows detailed information about the selected process in the main ta
 - Written - total bytes written by the process since it started
 - Written per second - bytes written per second by the process
 
+### Network Activity
+- Down - total bytes and packets received by the process since it started including per second values
+- Up - total bytes and packets sent by the process since it started including per second values
+
 ### Hierarchy
-- Parent process (Name and PID)
-  - Parent is determined based on ```Parent PID``` or ```Responsible PID``` if Parent PID is not available.
-- Child processes (Name and PID)
+- shows hierarchy up to the root process. Clicking on a process in the hierarchy will select that process in the inspector.
 
 ## Command
 Full command used to start the process including command line arguments.

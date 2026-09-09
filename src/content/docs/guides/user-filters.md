@@ -20,7 +20,8 @@ To create a new user filter, follow these steps:
 3. Enter a name for the filter.
 4. Define the filter in JS editor (see [JavaScript filters](/reference/js-filters/) for more information).
    Built-in expression checker notifies you of any syntax errors in the filter code.
-5. Click "Save" to create the filter.
+5. (Optional) Set default values for Menu Bar secondary value, inline value and sort metric. These values will be applied when the filter is selected in the menu bar popover.
+6. Click "Save" to create the filter.
 
 The new filter will appear in the user filters section.
 

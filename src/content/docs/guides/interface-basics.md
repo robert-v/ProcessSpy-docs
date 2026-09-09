@@ -36,7 +36,7 @@ Allows to select one or more properties used in quick search. The number of curr
 Instantly searches for processes matching the given string (or regex) in the selected properties.
 
 ## User filters
-Allows to select user filter. All processes matching the user filter are displayed in the main table.
+The left-most button represents triage dashboard followed by the list of user filters. The Triage Dashboard button glows when there are new alerts. See [Triage Dashboard](/guides/triage-dashboard/) for more information.
 
 ## Inspector pane
 When a process is selected in the main table, the inspector pane shows detailed information about the selected process. The inspector pane can be minimized or expanded using the button on the right side of the toolbar.

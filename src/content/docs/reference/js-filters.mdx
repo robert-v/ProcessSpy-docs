@@ -34,7 +34,12 @@ The process object contains the following properties:
 | `signingOrganization` | Extracted from process signature `Subject` `O` element                            | String  | Yes               |
 | `startupEntryType`    | One of the following: `launchDaemon`, `launchAgent`, `loginItemBookmark` or empty | String | Yes              |
 | `isHardenedRuntime`   | Whether the process is running with App Sandbox enabled | Boolean | Yes              |
-| `isSandboxed`   | Whether the process is running with App Sandbox enabled | Boolean | Yes              |
+| `isSandboxed`         | Whether the process is running with App Sandbox enabled | Boolean | Yes              |
+| `listeningPorts`      | List of listening ports                                                           | [Integer] | Yes              |
+| `downloadBytesPerSecond` | current download bytes per second                                              | Integer   | No                |
+| `uploadBytesPerSecond` | current upload bytes per second | Integer | No |
+ | `totalDownloadedBytes` | total downloaded bytes since app launch |  Integer | No |
+ | `totalUploadedBytes` | total uploaded bytes since app launch |  Integer | No |
 
 ## Example filters
 

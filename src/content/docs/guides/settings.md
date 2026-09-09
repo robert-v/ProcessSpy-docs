@@ -24,12 +24,48 @@ title: Settings
 ### Behavior
 - **Refresh interval (seconds)**: Sets the interval at which process information is refreshed in the main table.
 - **Case sensitive search**: When enabled, quick-search filters are case-sensitive.
-- **Show confirmation dialog before Quitting process**
+- **Show confirmation dialog before sending signal**
 - **Remember finished processes (minutes)**: Sets the duration for which finished processes are retained in the main table before being removed.
+- **Automatically start recording matching processes** - processes matching JS expression will automatically start recording history on startup or when they are discovered.
 
 ### External tools
 - **Path to vmmap**: Specifies the path to the `vmmap` tool used to retrieve dynamic library information for processes. By default, the application uses the system's `vmmap` located at `/usr/bin/vmmap`.
 - **Search query format**: Allows to customize the format of search queries when using the "Search Online" context menu. The string must containt placeholder for process name: `[processName]`. For example, to search on Google, use `https://www.google.com/search?q=[processName]`.
+
+### Privileged helper
+Area for privileged helper tool installation and uninstallation.
+
+- **Install helper**: Installs the privileged helper tool to allow receiving data (CPU, Memory etc.) from system processes.
+- **Waiting for approval**: Indicates that the installation of the privileged helper tool is waiting for user approval in System Preferences - Login Items.
+- **Remove**: Uninstalls the privileged helper tool.
+
+See [Privileged Helper](/guides/privileged-helper/) for more information.
+
+## Menu Bar
+Allows to configure the [Menu Bar](/guides/menu-bar/) popover behavior and appearance.
+
+### App Behavior
+- **Show ProcessSpy in:**
+  - **Menu Bar Only**: When enabled, ProcessSpy will be shown in the macOS menu bar.
+  - **Dock Only**: When enabled, ProcessSpy will be shown in the macOS Dock.
+  - **Menu Bar & Dock**: When enabled, ProcessSpy will be shown in both the macOS Dock and the menu bar.
+
+### Menu Bar Widgets
+Allows to configure which widgets are shown in the [Menu Bar](/guides/menu-bar/) popover and the chart style.
+
+## Alerts
+### Responsivness
+- **App not responding**: When enabled, the application will display an alert when a process is not responding.
+### Sustained usage
+- **High CPU** - When enabled, the application will display an alert when a process is using high CPU for a sustained period of time and above the give threshold.
+- **High GPU** - When enabled, the application will display an alert when a process is using high GPU for a sustained period of time and above the give threshold.
+### Sustained throughput
+- **High Disk throughput** - When enabled, the application will display an alert when a process is using high disk throughput (threshold managed internally)
+- **High Network throughput** - When enabled, the application will display an alert when a process is using high network throughput (threshold managed internally)
+### Linger
+- **Keep cleared alerts** - When enabled, cleared alerts are kept in the alert list (triage dashboard in main window and menu bar popover) for given period of time.
+### Ignored processes
+Allows to define processes that will be ignored by the alert system.
 
 ## Colors
 Allows to highlight processes in the main table containing the specified string in their name or command, or both with custom colors.

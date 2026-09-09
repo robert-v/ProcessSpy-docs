@@ -17,6 +17,8 @@ This column along with process name contains the following information depending
 - **Process paused indicator** - shows a pause icon when the process is paused
 - **CPU mini chart** - shows CPU usage history over the last 30 seconds, from 0 to 100 percent for better readability
 - **Secondary value** - shows one of the available secondary values depending on current settings
+- **Network data transfer indicator** - shown when there is network activity for the process or  its children.
+- **Timeline** - shows a graphical representation of the process's lifetime in relation to system uptime.
 
 ### Command
 Shows the full command used to start the process. Command string is truncated in the middle to fit the column width.

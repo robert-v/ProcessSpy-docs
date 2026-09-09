@@ -5,6 +5,8 @@ title: Context Menus
 ## Process Context Menu
 Right-clicking on a process in the process list opens a context menu with various actions:
 - **Bring to Front**: Brings the selected process's window to the front (if applicable).
+- **Expand All**: Expands all child processes of the selected process in the process list.
+- **Collapse All**: Collapses all child processes of the selected process in the process list.
 - **Search Online**: Opens a web browser to search for the selected process's name.
 - **Show in Finder**: Opens the Finder at the location of the selected process's executable.
 - **Copy**:
@@ -12,7 +14,7 @@ Right-clicking on a process in the process list opens a context menu with variou
   - **Name**: Copies the name of the selected process to the clipboard.
   - **Command**: Copies the command (without arguments) used to start the selected process to the clipboard. To get the full command including arguments, use the bottom pane.
   - **Path**: Copies the full path of the selected process's executable to the clipboard.
-  - **Version**: Copies the version of the selected process's executable to the clipboard. Disabled if version information is not available.
+  - **JSON**: Copies a JSON representation of the current process tree to the clipboard.
 - **Start History Recording**: Starts recording historical data (CPU %, Resident Memory and Threads) for the selected process.
 - **Stop History Recording**: Stops recording historical data for the selected process.
 - **Export History**: Exports the recorded history of the selected process as a CSV file.
@@ -25,20 +27,20 @@ Right-clicking on a process in the process list opens a context menu with variou
   - **Terminate**: Sends SIGTERM signal to the selected process to request a graceful termination.
   - **Kill**: Sends SIGKILL signal to the selected process to forcefully terminate it.
   - **Interrupt**: Sends SIGINT sto the selected process to request a graceful termination.
+  - **Abort**: Sends SIGABRT signal to the selected process to request a graceful termination with a core dump.
   - **Quit**: Sends SIGQUIT signal to the selected process to request a graceful termination with a core dump.
 
-## File Context Menu (Bottom Pane - Files Section)
+## File Context Menu (Inspector Pane - Files Section)
 Right-clicking on a file entry in the bottom pane's Files section opens a context menu with the following actions:
 - **Show in Finder**: Opens the Finder at the location of the selected file.
-- **Open With**: Generates a list of available applications to open the selected file type. If no applications are available, the list is empty.
 - **Copy Path**: Copies the full path of the selected file to the clipboard.
 
-## Connection Context Menu (Bottom Pane - Connections Section)
+## Connection Context Menu (Inspector Pane - Connections Section)
 Right-clicking on a connection entry in the bottom pane's Connections section opens a context menu with the following actions:
 - **Copy Source**: Copies the local address of the selected connection to the clipboard.
 - **Copy Destination**: Copies the remote address of the selected connection to the clipboard.
 
-## Dylib Context Menu (Bottom Pane - Dylibs Section)
+## Dylib Context Menu (Inspector Pane - Dylibs Section)
 Right-clicking on a dylib entry in the bottom pane's Dylibs section opens a context menu with the following actions:
 - **Show in Finder**: Opens the Finder at the location of the selected dylib.
 - **Copy Path**: Copies the full path of the selected dylib to the clipboard.

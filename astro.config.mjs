@@ -21,13 +21,16 @@ export default defineConfig({
                       // Each item here is one entry in the navigation menu.
                       { label: 'Introduction', slug: 'guides/introduction' },
                       { label: 'Interface Basics', slug: 'guides/interface-basics' },
+                      { label: 'Triage dashboard', slug: 'guides/triage-dashboard' },
                       { label: 'Table Columns', slug: 'guides/table-columns' },
                       { label: 'Inspector Pane', slug: 'guides/inspector-pane' },
                       { label: 'Quick Search', slug: 'guides/quick-search' },
                       { label: 'Context Menus', slug: 'guides/context-menus' },
+                      { label: 'Menu Bar', slug: 'guides/menu-bar' },
                       { label: 'Settings', slug: 'guides/settings' },
                       { label: 'User Filters', slug: 'guides/user-filters' },
                       { label: 'History Recording', slug: 'guides/history-recording' },
+                      { label: 'Privileged Helper', slug: 'guides/privileged-helper' },
                   ],
               },
               {
